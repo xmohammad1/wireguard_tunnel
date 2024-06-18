@@ -27,8 +27,6 @@ install_wireguard() {
             echo "Failed to install WireGuard."
             exit 1
         fi
-    else
-        echo "WireGuard is already installed."
     fi
 }
 
@@ -48,6 +46,8 @@ EOF
     sudo wg-quick up wg0
     sudo systemctl enable wg-quick@wg0
     echo "WireGuard configuration for Iran has been set."
+    ipv4_address=$(curl -s https://api.ipify.org)
+    echo "Iran IPv4 is : $ipv4_address"
     read -p "Press Enter to continue..."
 }
 
