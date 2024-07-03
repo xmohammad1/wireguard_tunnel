@@ -37,7 +37,7 @@ Iran_wireguard_config() {
 PrivateKey = mP7Isgpp26x4SW6TdTBi/SK6n0zvXOBfajVCKRx/elA=
 Address = 10.0.100.1/24
 ListenPort = 51820
-
+Endpoint = 10.0.100.2:51820
 [Peer]
 PublicKey = T5J5zL2t9mgZD+tEtVvuGb8pbQ6VF1YIeBEzVJXhARM=
 AllowedIPs = 10.0.100.2/32
